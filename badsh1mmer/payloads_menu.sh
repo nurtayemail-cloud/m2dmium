@@ -27,7 +27,6 @@ echo "m2dmium"
 echo "https://github.com/nurtayemail-cloud/m2dmium"
 echo ""
 echo "(1) Install Modmium"
-echo "(2) Emergency Revert (Will set ChromeOS back to MPKeys)
 echo "(s) Shell"
 echo "(c) Credits"
 echo "(w) whale payload"
@@ -40,68 +39,16 @@ if [ "$choice" = "1" ]; then
     /bin/sh "$PAYLOAD_DIR/modmium.sh"
 	/bin/sh
  	sleep infinity
-elif [ "$choice" = "2" ]; then
-    /bin/sh "$PAYLOAD_DIR/revert.sh"
- 	sh /usb/usr/sbin/payloads_menu.sh
-  	sleep infinity
-elif [ "$choice" = "3" ]; then
-    /bin/sh "$PAYLOAD_DIR/icarus.sh"
- 	sh /usb/usr/sbin/payloads_menu.sh
-  	sleep infinity
-elif [ "$choice" = "4" ]; then
-    /bin/sh "$PAYLOAD_DIR/mrchromebox.sh"
-	sh /usb/usr/sbin/payloads_menu.sh
-  	sleep infinity
-elif [ "$choice" = "5" ]; then
-    /bin/sh "$PAYLOAD_DIR/touchdev.sh"
-        sh /usb/usr/sbin/payloads_menu.sh
-        sleep infinity
-elif [ "$choice" = "6" ]; then
-    /bin/sh "$PAYLOAD_DIR/daub.sh"
-        sh /usb/usr/sbin/payloads_menu.sh
-        sleep infinity
-elif [ "$choice" = "badrecovery" ]; then # this is just for debugging.
-    /bin/sh "$PAYLOAD_DIR/badrecovery_debug.sh"
-        sh /usb/usr/sbin/payloads_menu.sh
-        sleep infinity
-elif [ "$choice" = "7" ]; then
-    /bin/sh "$PAYLOAD_DIR/quicksilver.sh"
-        sh /usb/usr/sbin/payloads_menu.sh
-        sleep infinity
-elif [ "$choice" = "8" ]; then
-    	/bin/sh "$PAYLOAD_DIR/protowrite.sh"
-        sh /usb/usr/sbin/payloads_menu.sh
-        sleep infinity
-elif [ "$choice" = "9" ]; then
-		vpd -i RW_VPD -l --no-cache
-		vpd -l --no-cache
-		driveletter=$(mount | grep "/usb type ext4" | cut -c8)
-		echo "Debug: drive letter is $driveletter"
-		mkfs.vfat /dev/sd"$driveletter"1
-		mount /dev/sd"$driveletter"1 /mnt/empty
-		crossystem --all > /mnt/empty/devinfo.txt
-		flashrom -p internal --wp-status >> /mnt/empty/devinfo.txt
-		vpd -i RW_VPD -l --no-cache >> /mnt/empty/devinfo.txt
-		vpd -l --no-cache >> /mnt/empty/devinfo.txt
-		umount /mnt/empty
-		sync
-		echo "These are also stored to the USB drive. You may view them in devinfo.txt"
-		/bin/sh
-    	sleep infinity
 elif [ "$choice" = "s" ]; then
 	/bin/sh #shut up! its fixed now :whale:
 	sh /usb/usr/sbin/payloads_menu.sh
     sleep infinity
 elif [ "$choice" = "c" ]; then
-    echo "-----BadSH1mmer-----"
-    echo "OlyB: creating BadRecovery, and Br0ker, + helping with scripts and some other stuff too"
-    echo "HarryJarry1: Active maintainer"
-    echo "Lxrd: Sh1ttyOOBE, Sh1ttyExec"
-	echo "xz8f: Creating menu, fixing stuff"
- 	echo "akane: hosting"
-	echo "Hannah: finding DAUB"
-	echo "Mariah carey: making the daub.sh script"
-	echo "emerwyi: quicksilver, protowrite"
+    echo "-----M2dmium-----"
+    echo "Skids: For being smart and actually reading"
+    echo "Me: For being dumb and making this for some reason"
+    echo "crosbreaker and CrOSmium: Actually making badsh1mmer and modmium"
+	echo "If you haven't gotten this yet, this is a joke do not run this shit lmfao"
 	# codenerd you're not fun :rage: bring back fanxql injection!!!
 	# echo "fanxql: being tuff, fanxql injection"
    	echo "-------------------"
