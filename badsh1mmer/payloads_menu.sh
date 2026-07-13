@@ -23,18 +23,11 @@ echo "IF8gICAgICAgICAgICAgICBfICAgICBfICAgICBfICAgICAgICAgICAgICAgICAgICAgICAgIC
 echo "" # fix display
 echo "$SCRIPT_DATE" # \n so it displays better
 echo "v$SCRIPT_BUILD"
-echo "https://crosbreaker.com"
-echo "https://github.com/crosbreaker/BadSH1mmer"
+echo "m2dmium"
+echo "https://github.com/nurtayemail-cloud/m2dmium"
 echo ""
-echo "(1) Br0ker / unenrollment up to kernver 5, By OlyB. Ported to BadRecovery by HarryJarry1"
-echo "(2) Caliginosity / Revert all changes made by sh1mmer or badsh1mmer (reenroll + more)"
-echo "(3) Icarus / unenrollment up to r129, by writable"
-echo "(4) MrChromebox Firmware Utility"
-echo "(5) Touch .developer_mode (skip 5 minute delay)"
-echo "(6) Daub / Originally found by Hannah, script by con/mariah carey"
-echo "(7) Quicksilver / Unenrollment up to kernver 6, by emerwyi. Script by mariah carey"
-echo "(8) protowrite / Unenrollment up to kernver 7, by emerwyi. Script by con"
-echo "(9) print device information to screen/to USB (stable device secret, etc)"
+echo "(1) Install Modmium"
+echo "(2) Emergency Revert (Will set ChromeOS back to MPKeys)
 echo "(s) Shell"
 echo "(c) Credits"
 echo "(w) whale payload"
@@ -44,11 +37,11 @@ echo -n "> "
 read choice
 
 if [ "$choice" = "1" ]; then
-    /bin/sh "$PAYLOAD_DIR/badbr0ker.sh"
+    /bin/sh "$PAYLOAD_DIR/modmium.sh"
 	/bin/sh
  	sleep infinity
 elif [ "$choice" = "2" ]; then
-    /bin/sh "$PAYLOAD_DIR/caliginosity.sh" # someone fix mrchromebox and icarus if they're broken, I just copy pasted from the sh1mmer repo
+    /bin/sh "$PAYLOAD_DIR/revert.sh"
  	sh /usb/usr/sbin/payloads_menu.sh
   	sleep infinity
 elif [ "$choice" = "3" ]; then
