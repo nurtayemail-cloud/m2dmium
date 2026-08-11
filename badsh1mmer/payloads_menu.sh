@@ -23,10 +23,10 @@ echo "IF8gICAgICAgICAgICAgICBfICAgICBfICAgICBfICAgICAgICAgICAgICAgICAgICAgICAgIC
 echo "" # fix display
 echo "$SCRIPT_DATE" # \n so it displays better
 echo "v$SCRIPT_BUILD"
-echo "m2dmium"
+echo "protowrite (ignore the name)"
 echo "https://github.com/nurtayemail-cloud/m2dmium"
 echo ""
-echo "(1) Install Modmium"
+echo "(1) run protowrite"
 echo "(s) Shell"
 echo "(c) Credits"
 echo "(w) whale payload"
@@ -44,11 +44,9 @@ elif [ "$choice" = "s" ]; then
 	sh /usb/usr/sbin/payloads_menu.sh
     sleep infinity
 elif [ "$choice" = "c" ]; then
-    echo "-----M2dmium-----"
-    echo "Skids: For being smart and actually reading"
-    echo "Me: For being dumb and making this for some reason"
-    echo "crosbreaker and CrOSmium: Actually making badsh1mmer and modmium"
-	echo "If you haven't gotten this yet, this is a joke do not run this shit lmfao"
+    echo "-----protowrote-----"
+	echo "crossystem: protowrite"
+	echo "wininit: sh3ttyexec (because how else would you be running this)"
 	# codenerd you're not fun :rage: bring back fanxql injection!!!
 	# echo "fanxql: being tuff, fanxql injection"
    	echo "-------------------"
